@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import React from 'react';  
 import About from './components/About';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
   
 import './index.css'; // Ensure you have Tailwind CSS set up
 
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Skills />
+      {/* <Skills /> */}
     </div>
   );
 }
