@@ -58,6 +58,13 @@ function Contact() {
           >
             Send Message
           </button>
+          <button
+            type="button"
+            onClick={() => window.location.href = 'tel:+918806815135'}
+            className="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition transform hover:scale-105"
+          >
+            Call Me
+          </button>
         </form>
       </div>
     </section>

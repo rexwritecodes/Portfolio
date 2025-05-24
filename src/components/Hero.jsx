@@ -1,40 +1,73 @@
-import React from 'react';
-import profileImg from '../assets/selfi.jpg'; // Adjust the path as necessary
-
-
+import React from "react";
+import { motion } from "framer-motion";
+import profileImage from "../assets/profile.jpg"; // Make sure this exists
 
 function Hero() {
   return (
-    <section className="h-screen flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-20" id="home">
-      {/* Left Content */}
-      <div className="text-center md:text-left md:w-1/2">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-          Hi, I'm <span className="text-blue-500">Pranav Panchwatkar</span>
-        </h1>
-        <h2 className="text-2xl text-gray-600 dark:text-gray-300 mb-6">
-          A Passionate Web Developer
-        </h2>
-        <p className="text-gray-500 dark:text-gray-400 mb-6">
-          I build responsive and modern web applications with clean UI and great UX.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="#contact" className="px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-            Contact Me
-          </a>
-          <a href="/resume.pdf" download className="px-6 py-3 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 dark:hover:bg-gray-800 transition">
-            Download Resume
-          </a>
-        </div>
+    <section className="h-screen flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-20">
+      {/* Text Content */}
+      <div className="md:w-1/2">
+        {/* Heading */}
+        <motion.h1
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4"
+        >
+          Hi, I'm Pranav 👋
+        </motion.h1>
+
+        {/* Availability line */}
+        <motion.div
+  initial={{ y: -100, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.2, duration: 0.8 }}
+  className="flex items-center justify-center md:justify-start gap-3 mb-2"
+>
+  {/* Green dot */}
+<div
+    className="w-3 h-3 rounded-full bg-[linear-gradient(to_right,#4ade80,#22c55e)] shadow-md animate-pulse"
+  ></div>
+  {/* Text */}
+  <p className="text-white font-medium text-lg">Available for work</p>
+</motion.div>
+
+        {/* Tagline */}
+        <motion.p
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 1 }}
+          className="text-xl text-gray-600 dark:text-gray-300 mb-6"
+        >
+          Turning ideas into engaging, high-performance websites & Apps.
+        </motion.p>
+
+        {/* Call To Action Button */}
+        <motion.a
+          href="#contact"
+          initial={{ y: 0, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+          whileHover={{ scale: 1.05 }}
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition"
+        >
+          Contact Me
+        </motion.a>
       </div>
 
-      {/* Right Image */}
-      <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+      {/* Profile Image */}
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.9, duration: 1 }}
+        className="md:w-1/2"
+      >
         <img
-          src={profileImg}
-          alt="Profile"
-          className="rounded-full w-60 h-60 object-cover border-4 border-blue-500 shadow-lg"
+          src={profileImage}
+          alt="Pranav Profile"
+          className="rounded-full w-64 h-64 object-cover mx-auto shadow-lg"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

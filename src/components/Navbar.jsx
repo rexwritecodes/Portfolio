@@ -1,19 +1,25 @@
 import React from 'react';
+import logo from '../assets/psyduck-removebg.png'; 
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50 dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Pranav Panchwatkar</h1>
-        <div className="space-x-6 hidden md:block">
-          <a href="#" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">Home</a>
-          <a href="#about" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">About</a>
-          <a href="#projects" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">Projects</a>
-          <a href="#contact" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">Contact</a>
-        </div>
+    <nav className="px-6 py-4  flex items-center justify-between bg-white dark:bg-gray-900 shadow-md max-w-6xl mx-auto px-6 py-20">
+      {/* Logo on the left */}
+      <div className="flex items-center gap-2">
+        <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
+        <span className="text-2xl font-bold text-gray-900 dark:text-white">Development Services</span>
+      </div>
+
+      {/* Navigation links (right side) */}
+      <div className="space-x-4 hidden md:flex">
+        <a href="#home" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Home</a>
+        <a href="#about" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">About</a>
+        <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Skills</a>
+        <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Projects</a>
+        <a href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Contact</a>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

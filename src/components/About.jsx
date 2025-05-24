@@ -11,20 +11,27 @@ function About() {
     >
       {/* Left: Text */}
       <div className="md:w-1/2">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+        <h2 className="text-6xl font-bold text-gray-800 dark:text-white mb-4">
           About Me
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
-          I'm a passionate web developer with a love for building interactive and user-friendly websites.
-          I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+        <p className="text-2xl text-gray-600 dark:text-gray-300 mb-4">
+         I’m Pranav Panchwatkar, a web designer based in Nagpur skilled in UI/UX design, responsive layouts, and creating interactive digital experiences using modern web technologies.
         </p>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
+        {/* <p className="text-xl text-gray-600 dark:text-gray-300 mb-4">
           With experience in React, Tailwind CSS, and modern JavaScript tools, I create responsive
           websites that perform well on all devices.
         </p>
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-xl text-gray-600 dark:text-gray-300">
           When I’m not coding, I enjoy reading tech blogs, playing games, and exploring new frameworks.
-        </p>
+        </p> */}
+        <button
+            type="button"
+            onClick={() => window.location.href = '/about'}
+            
+            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          >
+            More About Me
+          </button>
       </div>
 
       {/* Right: Image */}
