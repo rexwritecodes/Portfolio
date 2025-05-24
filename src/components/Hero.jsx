@@ -9,7 +9,7 @@ function Hero() {
       {/* Left Content */}
       <div className="text-center md:text-left md:w-1/2">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-          Hi, I'm <span className="text-blue-500">Your Name</span>
+          Hi, I'm <span className="text-blue-500">Pranav Panchwatkar</span>
         </h1>
         <h2 className="text-2xl text-gray-600 dark:text-gray-300 mb-6">
           A Passionate Web Developer
