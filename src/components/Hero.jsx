@@ -4,20 +4,9 @@ import profileImage from "../assets/profile.jpg"; // Make sure this exists
 
 function Hero() {
   return (
-    <section className="h-screen flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-20">
+    <section className=" flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-20">
       {/* Text Content */}
       <div className="md:w-1/2">
-        {/* Heading */}
-        <motion.h1
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4"
-        >
-          Hi, I'm Pranav 👋
-        </motion.h1>
-
-        {/* Availability line */}
         <motion.div
   initial={{ y: -100, opacity: 0 }}
   animate={{ y: 0, opacity: 1 }}
@@ -31,16 +20,27 @@ function Hero() {
   {/* Text */}
   <p className="text-white font-medium text-lg">Available for work</p>
 </motion.div>
+        {/* Heading */}
+        <motion.h1
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4"
+        >
+          Turning Ideas into engaging, High-Performance Websites & Apps.
+        </motion.h1>
+
+        {/* Availability line */}
 
         {/* Tagline */}
-        <motion.p
+        {/* <motion.p
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
           className="text-xl text-gray-600 dark:text-gray-300 mb-6"
         >
           Turning ideas into engaging, high-performance websites & Apps.
-        </motion.p>
+        </motion.p> */}
 
         {/* Call To Action Button */}
         <motion.a

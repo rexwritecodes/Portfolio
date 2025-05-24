@@ -3,6 +3,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-ico
 import { SiTailwindcss, SiMongodb, } from 'react-icons/si'; 
 
 
+
     const skills = [
   { name: 'HTML5', icon: <FaHtml5 className="text-orange-600" /> },
   { name: 'CSS3', icon: <FaCss3Alt className="text-blue-600" /> },
