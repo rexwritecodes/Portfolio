@@ -36,11 +36,11 @@ function About() {
 
       {/* Right: Image */}
       <div className="md:w-1/2 flex justify-center">
-        <img
+        {/* <img
           src={profileImg}
           alt="About"
           className="rounded-xl w-72 h-72 object-cover shadow-lg border-4 border-blue-500"
-        />
+        /> */}
       </div>
     </section>
   );
